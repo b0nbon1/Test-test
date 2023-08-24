@@ -1,0 +1,17 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "./postgres/queries/todos.sql"
+    schema: "./postgres/migrations/20230823152109_todos.up.sql"
+    # database: "postgresql://bon:1234567890@localhost:5432/sqlc_todos"
+    gen:
+      go:
+        # packages: "db"
+        out: "./pkg/todos/db"
+        emit_prepared_queries: true
+        emit_empty_slices: false
+        emit_interface: false
+        emit_json_tags: true
+
+
+
