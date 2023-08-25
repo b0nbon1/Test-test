@@ -1,6 +1,8 @@
 package todo
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+)
 
 func TodosRoutes(router fiber.Router) {
 	// router.Get("/todos", getAllTodos)

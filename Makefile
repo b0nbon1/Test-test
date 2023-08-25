@@ -4,11 +4,11 @@ migrate:
 
 rollback:
 	migrate -source file://postgres/migrations \
-		-database postgres://postgres://bon:1234567890@localhost:5432/sqlc_todos down
+		-database postgres://bon:1234567890@localhost:5432/sqlc_todos down
 	
 drop:
 	migrate -source file://postgres/migrations \
-		-database postgres://postgres://bon:1234567890@localhost:5432/sqlc_todos drop
+		-database postgres://bon:1234567890@localhost:5432/sqlc_todos drop
 
 migration:
 	@read -p "Enter migration name: " name; \

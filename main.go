@@ -1,6 +1,9 @@
 package main
 
-import "github.com/b0nbon1/learn-go/todo/app"
+import (
+
+	"github.com/b0nbon1/learn-go/todo/app"
+)
 
 // @title The Better Backend Template
 // @version 0.1
