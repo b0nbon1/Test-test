@@ -17,3 +17,6 @@ migration:
 sqlc:
 	sqlc generate
 
+dev:
+	go run main.go
+
