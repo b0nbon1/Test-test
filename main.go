@@ -5,13 +5,13 @@ import (
 	"github.com/b0nbon1/learn-go/todo/app"
 )
 
-// @title The Better Backend Template
-// @version 0.1
-// @description An example template of a Golang backend API using Fiber and MongoDB
-// @contact.name Ben Davis
-// @license.name MIT
-// @host localhost:8080
-// @BasePath /
+//	@title			The ultimate todo list API
+//	@version		0.1
+//	@description	Todo list API using Fiber and Postgres
+//	@contact.name	Bonvic Bundi
+//	@license.name	MIT
+//	@host			localhost:4500
+//	@BasePath		/
 func main() {
 	// setup and run app
 	err := app.SetupAndRunApp()

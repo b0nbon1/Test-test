@@ -1,0 +1,45 @@
+basePath: /
+definitions:
+  todo.ReturnedTodo:
+    properties:
+      completed:
+        type: boolean
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+  todo.TodoResponse:
+    type: object
+host: localhost:4500
+info:
+  contact:
+    name: Bonvic Bundi
+  description: Todo list API using Fiber and Postgres
+  license:
+    name: MIT
+  title: The ultimate todo list API
+  version: "0.1"
+paths:
+  /api/v1/todos:
+    post:
+      consumes:
+      - application/json
+      description: Be able to create a Todo
+      parameters:
+      - description: Todo
+        in: body
+        name: todo
+        schema:
+          $ref: '#/definitions/todo.ReturnedTodo'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/todo.TodoResponse'
+      summary: create a Todo
+      tags:
+      - Todo
+swagger: "2.0"
